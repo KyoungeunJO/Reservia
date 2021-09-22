@@ -1,0 +1,104 @@
+:root {
+    --color-link: #0065FC;
+    --color-bg: #F2F2F2;
+}
+
+@font-face
+{
+    font-family: 'Raleway-VariableFont_wght';
+    src: url(font/Raleway/'Raleway-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway-VariableFont_wght', Arial; sans-serif;
+}
+
+
+#logo
+{
+    width: 70%;
+    text-align: left;
+}
+
+nav
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: var(--color-link);
+    width: 50%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+.link {
+    border-bottom: 2px solid var(--color-bg);
+    margin-bottom: 25px;
+    color: black;
+}
+
+.active {
+    border-bottom: 2px solid var(--color-link);
+    color: var(--color-link);
+}
+
+#login {
+    text-align: right;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+
+.filtre_inner
+{
+    display: flex;
+    text-decoration: none;
+}
+
+.filtre a
+{    
+    color:black
+    margin-right: 2em;
+}
+
+.filtre
+{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#information
+{
+    border-width: 1em;
+    border-radius: 30%;
+    border-color: var(--color-bg);
+
+}
+
+
+footer
+{
+    background-color: var(--color-bg);
+}
+
+footer > section
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    margin-right: 5%;
+}
