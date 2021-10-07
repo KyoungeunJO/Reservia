@@ -1,0 +1,26 @@
+nav {
+    align-items: center;
+}
+
+nav a {
+    width: auto;
+}
+
+#login {
+    order: 1;
+}
+
+.link {
+    border-bottom: none;
+    margin-bottom: 25px;
+    color: black;
+}
+
+
+.active {
+    border-top: 2px solid var(--color-link);
+    color: var(--color-link);
+}
+
+
+
