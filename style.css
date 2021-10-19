@@ -16,8 +16,16 @@ html {
 @font-face
 {
     font-family: 'Raleway-VariableFont_wght';
-    src: url(font/Raleway/'Raleway-VariableFont_wght.ttf');
-    font-weight: normal;
+    src: url('font/Raleway/Raleway-VariableFont_wght.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Raleway-VariableFont_wght';
+    src: url('font/Raleway/Raleway-VariableFont_wght.ttf') format("truetype");
+    font-weight: 800;
     font-style: normal;
 }
 
@@ -27,7 +35,7 @@ html {
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: 'Raleway-VariableFont_wght', Arial; sans-serif;
+    font-family: 'Raleway-VariableFont_wght', Arial, sans-serif;
 }
 
 
@@ -122,6 +130,9 @@ h1 {
     box-shadow: var(--color-link) 0 0 0 2px;
 }
 
+.recherche span {
+    display: none;
+}
 
 .filtre_inner
 {
@@ -161,7 +172,12 @@ h1 {
     margin-top: 5px;
     margin-bottom: 5px;
     font-weight: bold;
-    
+    transition: transform 500ms, background-color 800ms;
+}
+
+.filtre_inner a:hover {
+    background-color: var(--color-bg);
+    transform: scale(1.1);
 }
 
 .info {
@@ -216,10 +232,7 @@ h1 {
 
 .populaires span {
     color: var(--color-link);
-    margin-top: auto;
-    font-size: 13px;
-    margin-bottom: 10px;
-    width: 60%;
+    font-size: 12px;
 }
 
 .contenu_populaires {
@@ -298,6 +311,7 @@ h1 {
     padding-top: 5px;
     padding-bottom: 5px;
     margin-left: 15px;
+    font-size: 12px;
 }
 
 #afficher {
