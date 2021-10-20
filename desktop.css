@@ -59,16 +59,18 @@ nav a {
     width: auto;
     margin-right: 20px;
     margin-top: 20px;
-    font-weight: bolder;
+    font-weight: §àà;
 }
 
 
 h2 {
     font-size: 1.2rem;
+    font-weight: 600;
 }
 
 h3 {
     font-size: 1rem;
+    font-weight: 600;
 }
 
 
@@ -184,6 +186,7 @@ h3 {
     width: 100%;
     aspect-ratio: 5/2;
     max-height: 75vh;
+    margin: 50px 0;
 }
 
 .activites article {

@@ -25,6 +25,14 @@ html {
 {
     font-family: 'Raleway-VariableFont_wght';
     src: url('font/Raleway/Raleway-VariableFont_wght.ttf') format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Raleway-VariableFont_wght';
+    src: url('font/Raleway/Raleway-VariableFont_wght.ttf') format("truetype");
     font-weight: 800;
     font-style: normal;
 }
@@ -84,6 +92,7 @@ nav a {
 
 h1 {
     font-size: 1.4em;
+    font-weight: 600;
     margin-bottom: auto;
     padding-bottom: 10px;
 }
@@ -113,9 +122,14 @@ h1 {
 }
 .recherche input {
     flex-grow: 1;
+    align-self: stretch;
     font-weight: 550;
     font-size: 18px;
     padding-left: 15px;
+}
+
+.recherche input:focus {
+    outline: var(--color-link) 1px solid;
 }
 
 .recherche ::placeholder {
@@ -142,7 +156,7 @@ h1 {
 
 .filtre_inner p {
     width: 100%;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 20px;
     margin: 10px 0;
 }
@@ -171,7 +185,7 @@ h1 {
     padding-right: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-weight: bold;
+    font-weight: 600;
     transition: transform 500ms, background-color 800ms;
 }
 
@@ -315,7 +329,7 @@ h1 {
 }
 
 #afficher {
-    font-weight: bold;
+    font-weight: 600;
     font-size: large;
     margin: 15px 0;
 }
@@ -376,8 +390,13 @@ footer > div
     padding: 10px;
 }
 
+footer a {
+    text-decoration: none;
+}
+
 footer p {
     margin: 7px 0;
+    color: black;
 }
 
 footer h3 {
