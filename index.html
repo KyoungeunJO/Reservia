@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 1024px)">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest">
     <title>Reservia</title>
     <script src="https://kit.fontawesome.com/a282401448.js" crossorigin="anonymous"></script>
   </head>
@@ -24,6 +28,7 @@
             <span>En plein centre ville ou en pleine nature</span>
                 <div class="recherche">
                     <label for="ville">
+                        <p class="sr-only">Ville</p>
                         <i class="fas fa-map-marker-alt"></i>
                     </label>
                     <input type="text" name="ville" id="ville" placeholder="Marseille, France"  />
@@ -45,7 +50,7 @@
             </div>
         </div>
 
-        <div class="sejour">
+        <main class="sejour">
             <section class="populaires">
                 <div class="titre_populaires">
                     <h2>Les plus populaires</h2>
@@ -110,6 +115,7 @@
     
             <section class="hebergements">
             <h2>Hébergements à Marseille</h2>
+            <div class="container_gallery_hebergements">
                 <a href="#">
                     <article> 
                         <img src="images/hebergements/auberge_la_cannebiere-s.jpg" alt="Auberge la Cannebière">
@@ -211,10 +217,10 @@
                         </div>    
                     </article>
                 </a>                        
-    
+            </div>
                 <p id="afficher">Afficher plus</p>
             </section>
-        </div>
+        </main>
         
 
         <section class="activites">
@@ -223,42 +229,42 @@
             <a id="vieuxport" class="img-big" href="#">
                 <article> 
                     <img src="images/activites/vieux_port.jpg" alt="Vieux Port">
-                    <span>Vieux Port</span>
+                    <h3>Vieux Port</h3>
                 </article>
             </a>
 
             <a href="#" class="img-medium">
                 <article> 
                     <img src="images/activites/fort_de_pomegues.jpg" alt="Fort de Pomègues">
-                    <span>Fort de Pomègues</span>
+                    <h3>Fort de Pomègues</h3>
                 </article>
             </a>
 
             <a href="#" class="img-small">
                 <article> 
                     <img src="images/activites/iles_du_frioul.jpg" alt="Îles du Frioul">
-                    <span>Îles du Frioul</span>
+                    <h3>Îles du Frioul</h3>
                 </article>
             </a>
 
             <a id="parcnational" class="img-big" href="#">
                 <article> 
                     <img src="images/activites/parc_natoinal_des_calanques.jpg" alt="Parc Natoinal des Calanques">
-                    <span>Parc Natoinal des Calanques</span>
+                    <h3>Parc Nation al des Calanques</h3>
                 </article>
             </a>
 
             <a href="#" class="img-small">
                 <article> 
                     <img src="images/activites/notre_dame_de_la_garde.jpg" alt="Notre-dame-de-la-Garde">
-                    <span>Notre-dame-de-la-Garde</span>
+                    <h3>Notre-dame-de-la-Garde</h3>
                 </article>
             </a>
 
             <a href="#" class="img-medium">
                 <article> 
                     <img src="images/activites/parc_longchamp.jpg" alt="Parc Longchamp">
-                    <span>Parc Longchamp</span>
+                    <h3>Parc Longchamp</h3>
                 </article>
             </a>
         </section>

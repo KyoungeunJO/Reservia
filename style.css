@@ -12,7 +12,6 @@ html {
 }
 */
 
-
 @font-face
 {
     font-family: 'Raleway-VariableFont_wght';
@@ -77,10 +76,12 @@ nav a {
     color: black;
 }
 
+
 .active {
     border-bottom: 2px solid var(--color-link);
     color: var(--color-link);
 }
+
 
 #login {
     text-align: right;
@@ -105,10 +106,11 @@ h1 {
 .recherche {
     margin: 25px 0;
     border: solid 2px var(--color-bg);
-    min-height: 45px;
     display: flex;
     align-items: center;
     border-radius: 10px;
+    min-height: 45px;
+    max-width: 450px;
 }
 
 .recherche label {
@@ -121,11 +123,12 @@ h1 {
     font-size: 20px;
 }
 .recherche input {
-    flex-grow: 1;
+    flex: 1 1;
     align-self: stretch;
     font-weight: 550;
     font-size: 18px;
     padding-left: 15px;
+    width: min(100%, 450px);
 }
 
 .recherche input:focus {
@@ -269,9 +272,10 @@ h1 {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 20px;
-    height: 150px;
     margin-top: 10px;
     margin-bottom: 10px;
+    aspect-ratio: 5/2;
+    width: 100%;
 }
 
 
@@ -363,7 +367,7 @@ h1 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.activites span {
+.activites h3 {
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;

@@ -16,25 +16,41 @@ nav a {
     order: 1;
     margin-right: 20px;
     margin-top: 0;
+    margin-left: 10px;
     border-top: 2px solid white;
 }
 
 .link {
     border-bottom: none;
     margin-bottom: 25px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 135px;
     color: black;
     border-top: 2px solid white;
+    transition: transform 500ms, border-color, color 800ms;
 }
 
+.link:hover {
+    border-color: var(--color-link);
+    color: var(--color-link);
+    /*transform: scale(1.1);*/
+}
 
 .active {
     border-top: 2px solid var(--color-link);
     color: var(--color-link);
+    margin-left: 0;
+    margin-right: 0;
+    width: 135px;
 }
 
-.recherche {
-    max-width: 450px;
+/*
+.link:hover .active {
+    border-color: white;
+    color: black;
 }
+*/
 
 .recherche button {
     border-radius: 0 5px 5px 0;    
@@ -83,8 +99,16 @@ h3 {
 }
 
 .populaires {
-    flex-grow: 1;
+    flex: 1 1;
     border-radius: 20px;
+}
+
+.populaires h2 {
+    margin-top: 0;
+}
+
+.titre_populaires {
+    margin-bottom: 10px;
 }
 
 .populaires span {
@@ -115,12 +139,16 @@ h3 {
 .hebergements {
     background-color: var(--color-bg);
     width: 65%;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0;
     border-radius: 20px;
+    margin: 0;
 }
+
+.container_gallery_hebergements{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 
 .contenu_hebergements {
     margin: 5px 0;
@@ -132,10 +160,12 @@ h3 {
 
 .hebergements article + * :not(img){
     margin-left: 10px;
+    margin: 15px 5px;
 }
 
 .hebergements h2 {
     grid-column: 1/-1;
+    margin-bottom: 14px
 }
 
 .hebergements h3 {
@@ -153,18 +183,15 @@ h3 {
     margin-left: 10px;
 }
 
+.hebergements a {
+    flex-basis: 32.5%;
+}
+
 .hebergements article {
     width: 100%;
     background-color: white;
     margin-bottom: 0;
     /*aspect-ratio: 5/4;*/
-}
-
-.hebergements img {
-    aspect-ratio: 6/3;
-}
-
-.hebergements article {
     transition: transform 500ms, 800ms;
 }
 
@@ -172,8 +199,14 @@ h3 {
     transform: scale(1.05);
 }
 
+.hebergements img {
+    aspect-ratio: 6/3;
+}
+
+
 #afficher {
     padding-left: 10px;
+    margin: 30px 0;
 }
 
 
@@ -194,6 +227,11 @@ h3 {
     grid-template-rows: 1fr 50px;
     height: 100%;
     margin: 0;
+    transition: transform 500ms, 800ms;
+}
+
+.activites article:hover {
+    transform: scale(1.05);
 }
 
 .activites h2 {
@@ -205,7 +243,7 @@ h3 {
     min-height: 0;
 }
 
-.activites span {
+.activites h3 {
     margin: auto 0;
     font-size: 1rem;
 }
