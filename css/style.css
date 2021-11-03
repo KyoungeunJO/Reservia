@@ -240,6 +240,7 @@ h1 {
 
 .populaires h3 {
     margin-bottom: 10px;
+    font-size: 1rem;
 }
 
 .populaires a {
@@ -247,9 +248,13 @@ h1 {
     color:black;
 }
 
+.populaires p {
+    font-size: 0.8rem;
+}
+
 .populaires span {
     color: var(--color-link);
-    font-size: 12px;
+    font-size: 0.8rem;
 }
 
 .contenu_populaires {
@@ -269,13 +274,16 @@ h1 {
     background-color: white;
     border-radius: 20px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     gap: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
     aspect-ratio: 5/2;
     width: 100%;
+}
+
+.populaires article div {
+    display: flex;
+    flex-direction: column;
 }
 
 

@@ -45,13 +45,6 @@ nav a {
     width: 135px;
 }
 
-/*
-.link:hover .active {
-    border-color: white;
-    color: black;
-}
-*/
-
 .recherche button {
     border-radius: 0 5px 5px 0;    
 }
@@ -117,7 +110,7 @@ h3 {
 }
 
 .populaires article {
-    transition: transform 500ms, 800ms;
+    transition: transform 300ms, 500ms;
 }
 
 .populaires article:hover {
@@ -192,7 +185,7 @@ h3 {
     background-color: white;
     margin-bottom: 0;
     /*aspect-ratio: 5/4;*/
-    transition: transform 500ms, 800ms;
+    transition: transform 300ms, 500ms;
 }
 
 .hebergements article:hover {
@@ -227,7 +220,7 @@ h3 {
     grid-template-rows: 1fr 50px;
     height: 100%;
     margin: 0;
-    transition: transform 500ms, 800ms;
+    transition: transform 300ms, 500ms;
 }
 
 .activites article:hover {
