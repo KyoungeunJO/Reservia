@@ -240,7 +240,7 @@ h1 {
 
 .populaires h3 {
     margin-bottom: 10px;
-    font-size: 1rem;
+    font-size: min(4vw,1rem);
 }
 
 .populaires a {
@@ -255,11 +255,14 @@ h1 {
 .populaires span {
     color: var(--color-link);
     font-size: 0.8rem;
+    position: absolute;
+    bottom: 5px;
 }
 
 .contenu_populaires {
     width: 60%;
     padding-top: 10px;
+    position: relative;
 }
 
 .populaires img {
