@@ -68,7 +68,7 @@ nav a {
     width: auto;
     margin-right: 20px;
     margin-top: 20px;
-    font-weight: §àà;
+    font-weight: 600;
 }
 
 
@@ -184,7 +184,6 @@ h3 {
     width: 100%;
     background-color: white;
     margin-bottom: 0;
-    /*aspect-ratio: 5/4;*/
     transition: transform 300ms, 500ms;
 }
 
